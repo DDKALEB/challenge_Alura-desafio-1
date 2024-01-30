@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHALLENGE-ALURA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assest/saida.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="cabecalho">
+        <img src="./assest/logo-alura.jpg" alt="logo-alura" />
+        <h1>Mensagens Codificadas</h1>
+      </header>
+      <div class="container-input">
+        <div class="input">
+          <textarea
+            id="input-texto"
+            placeholder="Digite o seu texto aqui ..."
+          ></textarea>
+          <p>ATENÇÃO: Apenas Letras Maiusculas e sem acento</p>
+        </div>
+        <div id="output">
+          <img src="./assest/saida.svg" alt="logo-saida" />
+          <h2>Sua Mensagem Criptografada aparecera aqui</h2>
+          <span
+            >Digite um texto que deseja Criptografar ou Descriptoigrafar</span
+          >
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="container-bnt">
+          <button onclick="criptografar()" class="btn-criptografar">
+            Criptografar
+          </button>
+          <button onclick="descriptografar()" class="btn-descriptografar">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="icons">
+        <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href=""><ion-icon name="logo-github"></ion-icon></a>
+        <h3>Desenvolvido por Claudio Tavares</h3>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>
