@@ -1,50 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
 :root {
-  --corprincipal: #ffcc7f9;
-  --corsecundaria: #caf9ff;
-  --cortitulo: ; #7c0160;
+  --corprincipal: #004c4c;
+  --corsecundaria: #b2d8d8;
+  --cortitulo: #006666;
 }
 
-body{
+body {
   background: var(--corsecundaria);
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family:  'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
-.cabecalho{
+.cabecalho {
   display: flex;
   justify-content: space-between;
   padding: 2%;
 }
 
-.cabecalho h1{
+.cabecalho h1 {
   color: var(--cortitulo);
 }
 
-.cabecalho img{
+.cabecalho img {
   max-width: 70px;
   max-height: 70px;
   width: auto;
   height: auto;
 }
 
-.container-input{
+.container-input {
   display: flex;
   justify-content: space-between;
   padding: 2% 0 0 4%;
 }
 
-.container-input .input{
+.container-input .input {
   width: 400px;
   height: 330px;
 }
 
-#input-texto{
+#input-texto {
   width: 345px;
   height: 330px;
   font-size: 20px;
@@ -52,12 +52,13 @@ body{
   background: transparent;
   box-shadow: none;
   border: none;
+  resize: none;
   outline: 0;
   padding: 10px;
   text-transform: uppercase;
 }
 
-#output{
+#output {
   display: flex;
   flex-direction: column;
   border: 3px solid var(--cortitulo);
@@ -67,18 +68,18 @@ body{
   margin-right: 3%;
 }
 
-#output h2{
+#output h2 {
   text-align: center;
   font-size: 25px;
   color: var(--cortitulo);
 }
 
-#output span{
+#output span {
   font-size: 16px;
   text-align: center;
 }
 
-#ouptu imag{
+#output img {
   max-width: 300px;
   max-height: 300px;
   width: auto;
@@ -86,7 +87,7 @@ body{
   margin-top: 4%;
 }
 
-.container-bnt button{
+.container-bnt button {
   border: 2px solid var(--cortitulo);
   border-radius: 10px;
   text-decoration: none;
@@ -97,7 +98,7 @@ body{
   cursor: pointer;
 }
 
-.btn.copiar{
+.btn-copiar {
   border: 2px solid var(--cortitulo);
   border-radius: 10px;
   text-decoration: none;
@@ -109,12 +110,12 @@ body{
   cursor: pointer;
 }
 
-.container-bnt button:hover{
+.container-bnt button:hover {
   border: 2px solid var(--corsecundaria);
-  transition: 0.5s all;  
+  transition: 0.5s all;
 }
 
-.rodape{
+.rodape {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,17 +125,16 @@ body{
   color: var(--cortitulo);
 }
 
-.rodape h3{
+.rodape h3 {
   font-size: 16px;
-  
 }
 
-.icons icon-icon{
-  width: 25px;
-  height: 25px;
+.icons ion-icon {
+  width: 50px;
+  height: 50px;
   color: var(--cortitulo);
 }
 
-.icons icon-icon:hover{
+.icons ion-icon:hover {
   color: var(--corsecundaria);
 }

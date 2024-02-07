@@ -11,28 +11,28 @@ function criptografar() {
     .replace(/o/g, 'ober')
     .replace(/u/g, 'ufat');
 
-  document.getElementById('output').innerHTML =
-    '<textarea readonly id="input-texto>' +
+  ouInput.innerHTML =
+    '<textarea readonly id="input-texto">' +
     resultCripto +
     '</textarea>' +
-    '<button class="btn-copiar" id="copiar" onclik="copiar()">Copiar</button>';
+    '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>';
 }
 
 function descriptografar() {
   var texto = textInput.value;
 
-  var resultDescripto = texto.repalce
+  var resultDescripto = texto
     .replace(/enter/g, 'e')
     .replace(/imes/g, 'i')
     .replace(/ai/g, 'a')
     .replace(/ober/g, 'o')
     .replace(/ufat/g, 'u');
 
-  document.getElementById('output').innerHTML =
-    '<textarea readonly id="input-texto>' +
+  ouInput.innerHTML =
+    '<textarea readonly id="input-texto">' +
     resultDescripto +
     '</textarea>' +
-    '<button class="btn-copiar" id="copiar" onclik="copiar()">Copiar</button>';
+    '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>';
 }
 
 function copiar() {
@@ -40,6 +40,5 @@ function copiar() {
 
   textoCop.select();
   document.execCommand('copy');
-
   alert('Texto Copiado!');
 }
